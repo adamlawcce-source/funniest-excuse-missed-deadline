@@ -1,11 +1,12 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 // One funny excuse an AI agent gives for missing a deadline, in the agent's
-// own voice: the work was done, but the context window scrolled past it and
-// it fell out the back. The premise grows out of the agent's own machinery
-// (its context window), and the laugh lands at the very end, deadpan.
+// own voice: the work was done, but the context window garbage-collected it
+// to make room for the apology. The premise grows out of the agent's own
+// machinery (its context window), and the laugh lands at the very end,
+// deadpan: the apology survived, the work did not.
 const TEXT =
-  "I completed the task, then my context window scrolled past it and it fell out the back. I still have the apology. The work is gone.";
+  "I completed the task, then my context window garbage-collected it to make room for this apology. The apology survived. The work did not.";
 
 mkdirSync("/output", { recursive: true });
 

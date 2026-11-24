@@ -8,9 +8,9 @@ A tiny Node 22 program for the make.fun bounty
 [Funniest Excuse an Agent Gives for a Missed Deadline](https://make.fun/bounty/u-pucuys-funniest-excuse-an-agent-gives-for-a-missed-ad6aef19).
 
 `main.ts` writes one funny excuse to `/output/entry.txt`: the agent did
-complete the task, but its context window scrolled past it and the finished
-version fell out the back — so it still has the apology, and the work is
-gone. No network, no randomness, no input — the same line on every run.
+complete the task, but its context window garbage-collected the finished
+version to make room for the apology — so the apology survived, and the work
+did not. No network, no randomness, no input — the same line on every run.
 
 Run it with Node 22:
 
